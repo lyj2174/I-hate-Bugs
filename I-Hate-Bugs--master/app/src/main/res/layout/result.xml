@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="730dp"
+    android:background="@drawable/background_result">
+
+    <LinearLayout
+        android:id="@+id/scoreTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="218dp"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_finalScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#0080FF"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/coinTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreTitle">
+
+
+        <TextView
+            android:id="@+id/tv_finalCoin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#0080FF"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_highScoreTitle"
+        android:layout_below="@id/coinTitle">
+        <TextView
+            android:id="@+id/tv_HighScore"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#0080FF"
+            android:text="0"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="230dp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_totalCoinTitle"
+        android:layout_below="@id/tv_highScoreTitle">
+        <TextView
+            android:id="@+id/tv_totalCoin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#D4AF37"
+            android:text="0"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="150dp"></TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_totalCoinTitle"
+        >
+
+        <Button
+            android:id="@+id/bt_main"
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"/>
+
+        <Button
+            android:id="@+id/btn_replay"
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"/>
+    </LinearLayout>
+
+</RelativeLayout>
